@@ -10,6 +10,8 @@ public class FirstController {
     public String niceToMeetYou(Model model){       //컨트롤러에서 모델로 변수를 넘기기 위해 model 정의
         //모델에서 사용할 변수 등록, 등록된 변수는 웹브라우저(뷰 페이지)로 넘어감
         model.addAttribute("username","홍팍");
-        return "greetings";     //resources>template>greetings.mustache 파일 반환
+
+        //resources>template>greetings.mustache 파일 반환
+        return "greetings";
     }
 }
