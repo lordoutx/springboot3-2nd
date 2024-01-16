@@ -1,0 +1,23 @@
+{{>layouts/header}}
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">가입일자</th>
+        <th scope="col">회원여부</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#memberList}}
+        <tr>
+            <th>{{id}}</th>
+            <td><a href="/members/{{id}}">{{name}}</a></td>
+            <td>{{email}}</td>
+        </tr>
+    {{/memberList}}
+    </tbody>
+</table>
+<a href="/members/new">가입하기</a>
+{{>layouts/footer}}
